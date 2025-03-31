@@ -1,0 +1,60 @@
+spring:
+  profiles:
+    #激活开发环境
+    active: dev
+  messages:
+    basename: i18n/Messages,i18n/Pages
+    # 通过connectProperties属性来打开mergeSql功能；慢SQL记录
+
+  main:
+    allow-bean-definition-overriding: true
+  jackson:
+    date-format: yyyy-MM-dd HH:mm:ss
+    time-zone: GMT+8
+logging:
+  config: classpath:log4j2.yml
+springfox:
+  documentation:
+    enabled: true
+swagger:
+  base-package: com.dr.code.diff.controller
+  authorization:
+    type: None
+
+git:
+  userName: ray1 #git用户名
+  password: 12345456 #git密码,这里可以配置token
+  local:
+    base:
+      dir: D:\git-test
+  ssh:
+    priKey: C:\Users\mylocl/.ssh/id_rsa. #私钥路径，如果公司内部使用私钥管理，可以使用这种方式，拉取代码时自动判定是http开头还是ssh开头采用不同的方式拉取
+svn:
+  userName: admin
+  password: 123456
+  local:
+    base:
+      dir: D:\svn-test
+maven:
+  home: E:/Program Files/apache-maven-3.6.3 #maven的安装目录，此配置主要用于代码编译，用于静态代码分析功能，如果只差异分析，可以不配置
+root:
+  code:
+    path: src/main/java/ #代码的根目录，非标准maven项目需要自定义
+jacoco:
+  root:
+    path: H:/jacoco/root/ #jacoco报告的根目录
+custom:
+  link:
+    start:
+      classNameList:
+        - com/dr/common/utils/mapper/OrikaMapperUtils
+      methodSignList:
+        - com/dr/code/diff/service/CodeDiffService#getDiffCode#DiffMethodParams
+        - com/dr/code/diff/analyze/bean/ClassInfo#getSuperClassName#
+server:
+  port: 8085
+  servlet:
+    session:
+      timeout: 3600
+
+
