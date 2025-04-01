@@ -1,0 +1,11 @@
+address,num,password,username,statusCode,scenario
+"123 Main St",123,"password123","user123",200,"OK"
+"456 Elm St",456,"password456","user456",201,"Created"
+"789 Oak St",789,"password789","user789",401,"Unauthorized"
+"321 Pine St",321,"password321","user321",403,"Forbidden"
+"654 Maple St",654,"password654","user654",404,"Not Found"
+"987 Birch St",987,"password987","user987",200,"OK"
+"555 Cedar St",555,"password555","user555",201,"Created"
+"333 Walnut St",333,"password333","user333",401,"Unauthorized"
+"222 Spruce St",222,"password222","user222",403,"Forbidden"
+"111 Fir St",111,"password111","user111",404,"Not Found"

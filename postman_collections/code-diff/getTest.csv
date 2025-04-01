@@ -1,0 +1,5 @@
+password,userName,statusCode,scenario
+"securePass123","johnDoe",200,"OK"
+"invalidCred","janeSmith",401,"Unauthorized"
+"accessDenied","adminUser",403,"Forbidden"
+"resourceMissing","guestUser",404,"Not Found"

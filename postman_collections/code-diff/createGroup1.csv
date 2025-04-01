@@ -1,0 +1,11 @@
+groupName,groupShortform,id,num,statusCode,scenario
+"Group1","G1",100,200,200,"OK"
+"Group2","G2",101,201,201,"Created"
+"Group3","G3",102,202,401,"Unauthorized"
+"Group4","G4",103,203,403,"Forbidden"
+"Group5","G5",104,204,404,"Not Found"
+"Group6","G6",105,205,200,"OK"
+"Group7","G7",106,206,201,"Created"
+"Group8","G8",107,207,401,"Unauthorized"
+"Group9","G9",108,208,403,"Forbidden"
+"Group10","G10",109,209,404,"Not Found"
